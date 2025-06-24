@@ -5,3 +5,4 @@
 *.backup
 *.log
 - terraform.tfvars
+"!terraform.tfvars" 
