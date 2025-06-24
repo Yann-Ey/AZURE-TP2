@@ -25,6 +25,13 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
+      - name: Vérifie les fichiers dans le dossier
+        run: ls -la
+
+      - name: Terraform Plan
+        run: terraform plan -var-file="terraform.tfvars"
+  
+
       - name: Terraform Plan
         run: terraform plan -var-file="terraform.tfvars"
 
