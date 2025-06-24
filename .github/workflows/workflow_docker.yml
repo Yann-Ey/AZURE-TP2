@@ -2,9 +2,9 @@ name: Build and Push Docker Image to ACR
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 env:
   ACR_NAME: acrynovdemo # remplace par le vrai nom de ton ACR
